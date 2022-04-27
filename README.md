@@ -34,7 +34,7 @@ c) Ledoit, O. and Wolf, M. (2004a). Honey, I shrunk the sample covariance matrix
 
 d) Ledoit, O. and Wolf, M. (2004b). A well-conditioned estimator for large-dimensional covariance matrices. Journal of Multivariate Analysis, 88(2):365–411. doi:10.1016/S0047-259X(03)00096-4
 
-e) Ledoit, O. and Wolf, M. (2022). Quadratic shrinkage for large covariance matrices. Bernoulli. Forthcoming. Working paper version UZH ECON 335 available online at https://www.econ.uzh.ch/en/people/faculty/wolf/publications.html.
+e) Ledoit, O. and Wolf, M. (2022). Quadratic shrinkage for large covariance matrices. Bernoulli, 28(3): 1519-1547.
 
 Copyright 2022:
 - Olivier Ledoit (olivier.ledoit@econ.uzh.ch) for the Matlab version
