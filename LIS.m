@@ -14,7 +14,7 @@ function sigmahat=LIS(Y,k)
 % takes place; if (s)he inputs k = 1, then it signifies that the data Y has
 % already been demeaned.
 %
-% This version: 01/2021
+% This version: 01/2024
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This file is released under the BSD 2-clause license.
