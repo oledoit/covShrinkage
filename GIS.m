@@ -16,7 +16,7 @@ function sigmahat=GIS(Y,k)
 % takes place; if (s)he inputs k = 1, then it signifies that the data Y has
 % already been demeaned.
 %
-% This version: 01/2021
+% This version: 01/2024
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This file is released under the BSD 2-clause license.
@@ -57,7 +57,10 @@ end
 n=N-k;                              % adjust effective sample size
 c=p/n;                              % concentration ratio
 sample=(Y'*Y)./n;                   % sample covariance matrix
+sample=(sample+sample')./2;         % make it even more symmetric numerically
 [u,lambda]=eig(sample,'vector');    % spectral decomposition
+u=real(u);                          % sample eigenvectors should be real
+lambda=real(lambda);                % sample eigenvalues should also be real
 [lambda,isort]=sort(lambda);        % sort eigenvalues in ascending order
 u=u(:,isort);                       % eigenvectors follow their eigenvalues
 %%% COMPUTE Linear-Inverse Shrinkage estimator of the covariance matrix %%%
