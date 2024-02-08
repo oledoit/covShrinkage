@@ -67,7 +67,7 @@ target(logical(eye(p)))=samplevar;
 
 % estimate the parameter that we call pi in Ledoit and Wolf (2003, JEF)
 Y2=Y.^2;
-sample2=(Y2'*Y2)./n; % sample covariance matrix of squared returns
+sample2=(Y2'*Y2)./n; % sample matrix of products of squared returns
 piMat=sample2-sample.^2;
 pihat=sum(sum(piMat));
 
